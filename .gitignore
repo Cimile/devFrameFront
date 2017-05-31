@@ -1,0 +1,10 @@
+**/target/*
+*.class
+*.jar
+*.jpg
+*.jpeg
+*.gif
+*.png
+*.bmp
+*.zip
+**/node_modules/*
