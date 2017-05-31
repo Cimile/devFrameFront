@@ -1,0 +1,13 @@
+<!-- <div>
+    <table border="2">
+        <tr>
+            <th>projName</th>
+        </tr>
+        <tr ng-repeat="x in projectData" ng-click="show($index)" ng-class="{focus:$index == focus}">
+            <td>{{x.projName}}</td>
+        </tr>
+    </table>
+</div> -->
+<div ng-repeat="x in projectData">
+    <button ng-click="show($index)" ng-class="{focus:$index == focus}">{{x.projName}}</button>
+</div>

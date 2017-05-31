@@ -1,0 +1,156 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "Tom",
+      "age": 10,
+      "hobby": "singing",
+      "subject": "Computer",
+      "teamid": 1
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "age": 19,
+      "hobby": "movie",
+      "subject": "English",
+      "teamid": 1
+    },
+    {
+      "id": 3,
+      "name": "Henry",
+      "age": 20,
+      "hobby": "reading",
+      "subject": "Math",
+      "teamid": 2
+    },
+    {
+      "id": 4,
+      "name": "Jim",
+      "age": 21,
+      "hobby": "reading",
+      "subject": "Math",
+      "teamid": 2
+    },
+    {
+      "name": "Bob",
+      "age": "11",
+      "hobby": "singing",
+      "subject": "Chinese",
+      "teamid": "2",
+      "id": 5
+    },
+    {
+      "name": "Bob",
+      "age": "20",
+      "hobby": "FootBall",
+      "subject": "Chinese",
+      "teamid": "1",
+      "id": 6
+    }
+  ],
+  "project": [
+    {
+      "id": 100,
+      "projDesc": "最好是男生",
+      "projName": "搬东西"
+    },
+    {
+      "id": 101,
+      "projDesc": "打扫卫生",
+      "projName": "周三任务"
+    },
+    {
+      "id": 102,
+      "projDesc": "义卖",
+      "projName": "周日任务"
+    },
+    {
+      "id": 103,
+      "projName": "周一任务",
+      "projDesc": "搬东西"
+    },
+    {
+      "id": 104,
+      "projName": "萨达萨达是",
+      "projDesc": "搬家"
+    }
+  ],
+  "task": [
+    {
+      "taskDesc": "把桌子搬到教学楼",
+      "taskName": "搬桌子",
+      "id": 100
+    },
+    {
+      "taskDesc": "把书带到教室",
+      "taskName": "搬书",
+      "id": 101
+    },
+    {
+      "taskDesc": "打扫教学楼",
+      "taskName": "打扫卫生",
+      "id": 102
+    },
+    {
+      "taskDesc": "学生宿舍楼前举办义卖活动",
+      "taskName": "大棚车义卖",
+      "id": 103
+    },
+    {
+      "taskName": "整理图书",
+      "taskDesc": "把图书按编号归类整理，并送到四楼",
+      "projectId": "100",
+      "id": 104
+    }
+  ],
+  "user": [
+    {
+      "userSelAsmt": "自我评估。。。。",
+      "userGender": "M",
+      "id": 10000,
+      "username": "jack"
+    },
+    {
+      "userSelAsmt": "自我评估。。。。",
+      "userGender": "M",
+      "id": 10001,
+      "username": "jack"
+    },
+    {
+      "userSelAsmt": "theshy",
+      "userGender": "M",
+      "id": 10002,
+      "username": "xiaobai"
+    },
+    {
+      "userSelAsmt": "the shy",
+      "id": 10003,
+      "username": "xiaobai"
+    },
+    {
+      "userSelAsmt": "the shy",
+      "id": 10004,
+      "username": "xiaobai"
+    },
+    {
+      "userSelAsmt": "the shy",
+      "id": 10005,
+      "username": "xiaobai"
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "content": "addFed"
+    },
+    {
+      "id": 3,
+      "content": "还有两个任务啊"
+    },
+    {
+      "id": 4,
+      "content": "updateFed"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!-- <div class="dialogdemo">
+    输入要查询的内容:
+    <input type="text" style="width:100px" />
+    <md-button class="md-primary md-raised" ng-click="">search</md-button>
+</div>
+<div class="gridStyle" ng-grid="gridOptions"></div>
+<div ng-cloak="" md-theme="{{theme}}" class="dialogdemo1">
+    <md-button class="md-primary md-raised" ng-click="showAdvanced($event)">add</md-button>
+    <md-button class="md-primary md-raised" ng-click="delete()">delete</md-button>
+    <md-button class="md-primary md-raised" ng-click="modify()">modify</md-button>
+</div> -->
+<script type="text/ng-template" id="dialog1.tmpl.html">
+    <md-dialog aria-label="dialog">
+        <form ng-cloak>
+            <md-dialog-content>
+                <div class="md-dialog-content">
+                    projName:
+                    <input ng-model="name" type="text"></input>
+                    <br> projDesc:
+                    <input type="text" ng-model="desc"></input>
+                    <br>
+                </div>
+            </md-dialog-content>
+            <md-dialog-actions>
+                <md-button class="md-primary md-raised" ng-click="add()">add</md-button>
+                <md-button ng-click="cancel()">retrun</md-button>
+            </md-dialog-actions>
+        </form>
+    </md-dialog>
+</script>
+<script type="text/ng-template" id="dialog2.tmpl.html">
+    <md-dialog aria-label="dialog">
+        <form ng-cloak>
+            <md-dialog-content>
+                <div class="md-dialog-content">
+                    projId:
+                    <input type="text" ng-model="projId" readonly></input>
+                    </br>projName:
+                    <input ng-model="projName" type="text "></input>
+                    <br> projDesc:
+                    <input type="text " ng-model="projDesc"></input>
+                    <br>
+                </div>
+            </md-dialog-content>
+            <md-dialog-actions>
+                <md-button class="md-primary md-raised" ng-click="modify() ">modify</md-button>
+                <md-button ng-click="cancel() ">retrun</md-button>
+            </md-dialog-actions>
+        </form>
+    </md-dialog>
+</script>
+<span ng-show="usershow">Welcome <b>{{username}}</b>!<button ng-click="exit()">exit</button></span>
+<span ng-hide="usershow">请先登录<button ng-click="login()">login</button></span>
+<div class="row ">
+    <div class="col-lg-12 ">
+        <h1 class="page-header ">Task System</h1>
+    </div>
+</div>
+<div class="row ">
+    <div class="col-lg-12 ">
+        <div class="panel panel-default ">
+            <div class="panel-heading ">
+                Project
+            </div>
+            <div class="panel-body ">
+                <div class="dataTable_wrapper ">
+                    <table class="table table-bordered table-hover ">
+                        <tr>
+                            <th>id</th>
+                            <th>projName</th>
+                            <th>projDesc</th>
+                        </tr>
+                        <tr ng-repeat="x in projectData " ng-click="show($index)" ng-class="{focus:$index == focus}">
+                            <td>{{x.id}}</td>
+                            <td>{{x.projName}}</td>
+                            <td>{{x.projDesc}}</td>
+                            <td>
+                                <input type="button" ng-click="check()" value="查看任务详情">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="well ">
+                    <input type="text " ng-model="clicked " readonly></input>
+                    <!-- <div ng-show="bool ">
+                        <i>projName:</i>
+                        <input type="text " ng-model="name "></input>
+                        <i>projDesc:</i>
+                        <input type="text " ng-model="desc "></input>
+                        <button ng-click="add() " ng-show="boolean ">add</button>
+                        <button ng-click="modify() " ng-hide="boolean ">modify</button>
+                    </div> -->
+                    <md-button ng-hide="bool" class="md-primary md-raised" ng-click="showAdvanced($event) ">add</md-button>
+                    <md-button ng-hide="bool" class="md-primary md-raised" ng-click="delete() ">delete</md-button>
+                    <md-button ng-hide="bool" class="md-primary md-raised" ng-click="showAdvancedTwo($event) ">modify</md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

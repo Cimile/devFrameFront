@@ -1,0 +1,29 @@
+<!-- <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+ -->
+<div>
+    <h3 ng-show="show">用户登陆界面</h3>
+    <h3 ng-hide="show">管理员登陆界面</h3>
+    <div class="input-group">
+        <span class="input-group-addon">name:</span>
+        <input type="text" placeholder="用户名" ng-model="username">
+    </div>
+    <br>
+    <!--下面是密码输入框-->
+    <div class="input-group">
+        <span class="input-group-addon">password</span>
+        <input type="password" placeholder="密码" ng-model="password">
+    </div>
+    <br>
+    <div>
+        <button type="submit" style="width:140px;" ng-click="login()">Login</button>
+    </div>
+    <button ng-show="show" style="width:140px;" ng-click="switch()">切换到管理员界面</button>
+    <button ng-hide="show" style="width:160px;" ng-click="switch()">切换到用户登录界面</button>
+</div>
